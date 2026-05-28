@@ -1,0 +1,255 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.form-usuario-container {
+    font-family: 'G-Sans', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* BARRA SUPERIOR OSCURA */
+.form-usuario-header-main {
+    background-color: #3d4652;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ÁREA DE CONTENIDO */
+.form-usuario-content {
+    padding: 30px 20px;
+}
+
+
+.title-icon {
+    color: #4a69bd;
+}
+
+/* TARJETA PANEL PRINCIPAL SPLIT */
+.form-usuario-card {
+    background-color: #ffffff;
+    border-radius: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    display: flex;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+/* SECCIÓN IZQUIERDA: FORMULARIO */
+.form-usuario-left {
+    flex: 1.3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-card-subtitle {
+    color: #777777;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* COMPONENTE DE CARGA DE AVATAR / FOTO */
+.form-avatar-upload-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fcfcfc;
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px dashed #cccccc;
+    margin-bottom: 10px;
+}
+
+.avatar-preview-wrapper {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #eeeeee;
+    border: 2px solid #3d4652;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-preview-placeholder {
+    font-size: 2rem;
+    color: #777777;
+}
+
+.avatar-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hidden-file-input {
+    display: none;
+}
+
+.btn-upload-file-label {
+    background-color: #3d4652;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+.btn-upload-file-label:hover {
+    background-color: #2c333d;
+}
+
+.file-hint-text {
+    font-size: 0.75rem;
+    color: #999999;
+}
+
+/* DISEÑO DE FILAS Y CONTROLES */
+.form-grid-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-field-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-field-wrapper label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #111111;
+    margin-left: 4px;
+}
+
+/* CAMPOS DE ENTRADA E INPUTS */
+.input-field-wrapper input,
+.select-field-custom {
+    font-family: 'G-Sans', sans-serif;
+    padding: 12px 16px;
+    border: 1.5px solid #ababab;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    color: #333333;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-field-wrapper input:focus,
+.select-field-custom:focus {
+    border-color: #003e30;
+    box-shadow: 0 0 0 3px rgba(0, 62, 48, 0.1);
+}
+
+.select-field-custom {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.static-blank-space {
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* BOTONES INFERIORES DE ACCIÓN */
+.form-actions-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.btn-form-submit,
+.btn-form-cancel {
+    font-family: 'G-Sans', sans-serif;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-form-submit {
+    background-color: #003e30;
+    color: #ffffff;
+}
+
+.btn-form-submit:hover {
+    background-color: #002b21;
+}
+
+.btn-form-cancel {
+    background-color: #8c3a3a;
+    color: #ffffff;
+}
+
+.btn-form-cancel:hover {
+    background-color: #702e2e;
+}
+
+.btn-form-submit:active,
+.btn-form-cancel:active {
+    transform: scale(0.98);
+}
+
+/* SECCIÓN DERECHA: IMAGEN DE FONDO */
+.form-usuario-right {
+    flex: 0.9;
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+.form-side-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 850px) {
+    .form-usuario-card {
+        flex-direction: column;
+    }
+    .form-usuario-right {
+        display: none;
+    }
+    .form-group-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

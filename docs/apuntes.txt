@@ -1,0 +1,125 @@
+LINK VIDEO REF
+https://www.youtube.com/watch?v=OtxEG8TIEcE
+
+LEVANTAR EL PROYECTO 
+Instalar 
+    -docker
+    -visual studio code
+    -git bash
+    -Postman
+    -Node js
+Bajar el respositorio
+    -git clone (el url del repositorio)
+
+instalar dependencias
+npm init -y // en caso de inicio de proyecto desde 0 
+npm install express pg dotenv cors morgan 
+npm install nodemon --save-dev
+npm install bcryptjs
+npm install jsonwebtoken
+npm install multer
+    EXPLICACION DEPENDENCIAS
+//npm init -y: para que configure el archivo package.json
+// instalacion de dependencias clave
+    Express: crea servidor http
+    pg: para la Conexión PostgreSQL
+    dotenv: para variables de entorno
+    Cors: Permite que el frontend consuma tu API 
+    Morgan: Muestra en consola cada request
+    nodemon --save-dev: reinicia el servidor automaticamente
+    multer: Para la subida de fotos 
+todo se ejecuta en la carpeta backend 
+
+Levantar docker compse
+docker compose up -d 
+// esto sirve pra levantar los servicios programados en el archivo docker-compose.yml
+// pero primero deberás de tener ejecutada la aplicacion docker desktop
+//y deberás estar posicionado al nivel del archivo docker-compose.yml para que funcione
+// una vez levantado todo, entras a al pgadmin con las credenciales correspondientes
+//click derecho en servers luego register/server y aplicas la siguiente configuración
+//pestaña general 
+//opcion name = dockerconnection
+//pestaña connection 
+// opcion host name/addres= postgres
+// port =5432, maintenance database=ventas_db, username= root, password= root
+// y guardar
+// despues importas las tablas en la base de datos ventas_db
+
+FLUJO DEL PROYECTO
+1️⃣ Diseñar base de datos (modelo de ventas)
+2️⃣ Crear tablas en PostgreSQL (SQL real)
+3️⃣ Backend con Node.js (CommonJS) + Express
+    -Crear estructura de carpetas
+    -Instalar dependencias
+4️⃣ Conexión a PostgreSQL (pg)
+5️⃣ Endpoints CRUD
+6️⃣ Probar con Postman
+7️⃣ Frontend después
+
+estructura de carpetas
+backend/
+│── src/
+│   │── config/
+│   │   │── db.js
+│   │── controllers/
+│   │   │── proveedores.controller.js
+│   │   │── productos.controller.js
+│   │   │── ventas.controller.js
+│   │── routes/
+│   │   │── proveedores.routes.js
+│   │   │── productos.routes.js
+│   │   │── ventas.routes.js
+│   │── app.js
+│── index.js
+│── .env
+
+
+
+COMANDO NODE
+npm.cmd run dev
+
+--------------FRONTEND-------------
+COMANDOS PARA INSTALAR REACT
+npm.cmd create vite
+Agregar nombre del proyecto
+Seleccionar REACT
+Seleccionar JavaScript
+seguir los pasos que indica cmd 
+    posibles pasos:
+    cd "nombre de tu proyecto"
+    npm install
+    npm run dev
+
+Instalaciones 
+
+npm install react-router-dom
+npm install axios
+npm install recharts - para el Dashboard
+
+
+Estructura de carpetas
+
+src
+│
+├── components
+│   ├── Navbar.jsx
+│   └── Sidebar.jsx
+│
+├── pages
+│   ├── Login.jsx
+│   ├── Dashboard.jsx
+│   ├── Usuarios.jsx
+│   ├── Productos.jsx
+│   ├── Ventas.jsx
+│   └── Inventario.jsx
+│
+├── services
+│   └── api.js
+│
+├── context
+│   └── AuthContext.jsx
+│
+├── App.jsx
+└── main.jsx
+
+

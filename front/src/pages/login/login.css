@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Poppins;
+  src: url('../../fonts/Poppins/Poppins-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Contenedor principal con la imagen de fondo */
+.login-container {
+  height: 100vh;
+  width: 128%;
+  background: linear-gradient(rgba(20, 40, 80, 0.6), rgba(20, 40, 80, 0.6)), 
+              url('../../assets/images/Background-Login.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Flexbox para dividir tarjeta y texto */
+.login-content {
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Tarjeta oscura del formulario */
+.login-card {
+  background-color: #2c3e50; /* Gris azulado oscuro */
+  padding: 40px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  color: white;
+}
+
+.login-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Grupos de input y labels */
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-group input {
+  padding: 12px 15px;
+  border-radius: 25px; /* Bordes muy redondeados */
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Botón turquesa */
+.btn-login {
+  background-color: #008ba3; /* Color turquesa de la imagen */
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 0;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #00acc1;
+}
+
+/* Lado derecho del texto */
+.login-text {
+  color: white;
+  text-align: right;
+  flex: 1;
+  padding-left: 50px;
+}
+
+.login-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 800;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-icon {
+  font-size: 5rem;
+  margin-top: 20px;
+  opacity: 0.9;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .login-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .login-text {
+    padding-left: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}

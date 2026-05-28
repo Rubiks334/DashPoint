@@ -1,0 +1,213 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.proveedores-container {
+    font-family: 'G-Sans', sans-serif;
+    background-color: #f4f4f4;
+    height: 93vh;
+width: 173vh;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO SUPERIOR OSCURO */
+.proveedores-header-main {
+    background-color: #3d4652;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ÁREA DE CONTENIDO ENVOLVENTE */
+.proveedores-content {
+    padding: 30px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* TARJETA PANEL BLANCA PRINCIPAL */
+.proveedores-card-panel {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    height: 65vh;
+}
+
+/* ACCIONES SUPERIORES (BOTÓN AGREGAR) */
+.proveedores-top-actions {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-proveedores-add {
+    background-color: #003e30;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-proveedores-add:hover {
+    background-color: #002b21;
+}
+
+.btn-proveedores-add:active {
+    transform: scale(0.98);
+}
+
+.btn-proveedores-add span {
+    font-size: 1.1rem;
+}
+
+/* CONTENEDOR DE TABLA RESPONSIVA */
+.proveedores-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* TABLA CORPORATIVA MINIMALISTA */
+.proveedores-table-main {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: left; /* Alineado a la izquierda para mejor lectura de datos textuales largos */
+}
+
+/* Cabeceras de la Tabla */
+.proveedores-table-main th {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111111;
+    padding: 14px 12px;
+    border-bottom: 2px solid #dddddd;
+}
+
+/* Alinear cabecera y columna de acciones al centro */
+.proveedores-table-main th:last-child,
+.td-acciones {
+    text-align: center;
+}
+
+/* Filas del Cuerpo */
+.proveedores-table-main td {
+    padding: 16px 12px;
+    font-size: 0.9rem;
+    color: #333333;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+}
+
+/* Efecto hover por fila */
+.proveedores-table-main tbody tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* ESTILOS DE COLUMNAS */
+.td-empresa {
+    font-weight: 600;
+    color: #111111;
+}
+
+.td-contacto {
+    font-weight: 500;
+}
+
+.td-correo {
+    color: #444444;
+}
+
+.td-telefono {
+    color: #2b323b;
+    font-variant-numeric: tabular-nums;
+}
+
+.td-direccion {
+    color: #666666;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* GRUPO DE BOTONES DE ACCIÓN */
+.action-buttons-group {
+    display: inline-flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botones Individuales de Fila */
+.btn-action-edit,
+.btn-action-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    transition: transform 0.1s;
+}
+
+.btn-action-edit {
+    color: #c48c33;
+}
+
+.btn-action-delete {
+    color: #b84a4a;
+}
+
+.btn-action-edit:hover,
+.btn-action-delete:hover {
+    transform: scale(1.1);
+}
+
+.btn-action-edit span,
+.btn-action-delete span {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+/* ESTADO SIN REGISTROS */
+.proveedores-empty-state {
+    padding: 40px !important;
+    color: #999999 !important;
+    font-size: 1rem !important;
+    text-align: center !important;
+}
+
+/* ICONO DE FONDO DECORATIVO (Abajo a la derecha) */
+.proveedores-decor-tag {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    opacity: 0.15;
+    pointer-events: none;
+    user-select: none;
+}
+
+.decor-icon-box {
+    font-size: 4rem;
+}

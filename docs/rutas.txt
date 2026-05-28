@@ -1,0 +1,54 @@
+GET
+   --Proveedores--
+http://localhost:3000/proveedores/
+http://localhost:3000/proveedores/(id)
+   --usuarios--
+http://localhost:3000/usuarios/
+http://localhost:3000/usuarios/(id)
+   --productos--
+http://localhost:3000/productos/
+http://localhost:3000/productos/(id)
+   --inventario--
+http://localhost:3000/inventario/stock/(id)
+http://localhost:3000/inventario/movimientos/(id)
+   --ventas--
+http://localhost:3000/ventas/
+http://localhost:3000/ventas/detalles/(id)
+   --Caja--
+http://localhost:3000/caja/actual
+http://localhost:3000/caja/movimientos
+
+
+POST 
+   --Proveedores--
+http://localhost:3000/proveedores/
+   --usuarios--
+http://localhost:3000/usuarios/
+   --productos--
+http://localhost:3000/productos/
+   --inventario--
+http://localhost:3000/inventario/entrada/
+http://localhost:3000/inventario/ajuste/
+   --ventas--
+http://localhost:3000/ventas/
+   --Caja--
+http://localhost:3000/caja/abrir
+http://localhost:3000/caja/cerrar
+http://localhost:3000/caja/movimiento
+
+
+DELETE 
+   --Proveedores--
+http://localhost:3000/proveedores/(id)
+  --productos--
+http://localhost:3000/productos/(id)
+UPDATE
+   --Proveedores--
+http://localhost:3000/proveedores/(id)
+   --usuarios--
+http://localhost:3000/usuarios/desactivar/(id)<-eliminar 
+http://localhost:3000/usuarios/(id)
+   --productos--
+http://localhost:3000/productos/(id)
+   --ventas--
+http://localhost:3000/ventas/cancelar/(id)

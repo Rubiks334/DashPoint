@@ -1,0 +1,83 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ELIMINAR ESPACIOS GRISES: Forzamos el ancho total */
+.caja-full-wrapper {
+    width: 125%;
+    min-height: 100%;
+    width: 173vh;
+    background-color: white; /* Esto cubre el fondo gris que se ve en tu imagen */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: G-Sans;
+}
+
+/* HEADER: De extremo a extremo */
+.caja-header-full {
+    background-color: #3d4652;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.caja-header-full h2 {
+    color: white !important;
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* CUERPO: Sin paddings laterales para ganar espacio */
+.caja-body-full {
+    flex: 1;
+    padding: 20px 0px; /* Solo padding arriba y abajo */
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+/* TABLA: Estirada al 100% del espacio disponible */
+.caja-table-full {
+    width: 100%; 
+    border-collapse: collapse;
+    background-color: white;
+    table-layout: auto;
+}
+
+/* LÍNEAS DE DISEÑO (CANVA STYLE) */
+.caja-table-full th {
+    padding: 20px;
+    border-bottom: 3px solid #333;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.caja-table-full td {
+    padding: 25px 15px;
+    text-align: center;
+    /* Línea gris gruesa característica */
+    border-bottom: 3px solid #b4b4b4; 
+    color: #333;
+}
+
+/* DETALLES VISUALES */
+.monto-negrita {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.texto-descripcion {
+    font-style: italic;
+    color: #666;
+}
+
+.caja-table-full tbody tr:hover {
+    background-color: #f9f9f9;
+}

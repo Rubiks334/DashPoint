@@ -1,0 +1,72 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ====== CONTENEDOR ====== */
+.dashboard {
+  height: 93vh;
+  width: 85vw;
+  overflow: hidden;
+  padding: 10px;
+  background: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+  font-family: G-Sans;
+}
+
+/* ====== KPIs ====== */
+.kpis {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.kpi {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background: #4b7bec;
+  color: white;
+  text-align: center;
+}
+
+/* ====== GRID PRINCIPAL ====== */
+.dashboard-grid {
+  flex: 1;
+  display: grid;
+
+  /* 👇 AQUÍ ESTÁ LA CLAVE */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 10px;
+  height: 100%;
+}
+
+/* ====== CARDS ====== */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ====== GRÁFICAS ====== */
+.card h2 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.recharts-responsive-container {
+  flex: 1 !important;
+}
+
+/* ====== LISTA ====== */
+.productos-list {
+  overflow-y: auto;
+  font-size: 12px;
+}

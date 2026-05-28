@@ -1,0 +1,180 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.form-producto-container {
+    font-family: 'G-Sans', sans-serif;
+    background-color: #f4f4f4;
+    height: 93vh;
+    width: 173vh;
+    box-sizing: border-box;
+}
+
+/* BARRA SUPERIOR DE TÍTULO OSCURO */
+.form-producto-header-main {
+    background-color: #3d4652;
+    color: #ffffff;
+    text-align: center;
+    padding: 13px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* CONTENEDOR CENTRAL */
+.form-producto-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* TARJETA CONTENEDORA DIVIDIDA (SPLIT CARD) */
+.form-producto-split-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 24px;
+    width: 130vh;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    overflow: hidden; /* Asegura el recorte curvo en las esquinas */
+}
+
+/* LADO IZQUIERDO: DETALLES DEL FORMULARIO */
+.form-producto-left {
+    flex: 1;
+    padding: 7px 45px 7px;
+    background-color: #fcfcfc;
+}
+
+.form-producto-subtitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #888888;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.form-element-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* CAMPOS DE ENTRADA (LABELS E INPUTS) */
+.form-group-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.form-group-field label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111111;
+    text-align: center;
+}
+
+.form-input-text, .form-select-custom {
+    width: 100%;
+    max-width: 320px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border: 1px solid #999999;
+    border-radius: 12px;
+    outline: none;
+    text-align: center;
+    color: #333333;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.form-input-text::placeholder {
+    color: #cccccc;
+}
+
+/* SELECT ESPECÍFICO */
+.form-select-custom {
+    text-align-last: center; /* Centra el texto del dropdown */
+    cursor: pointer;
+    background-color: #3d4652;
+    color: #ffffff;
+    border: none;
+}
+
+.form-select-custom option {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* BOTONES INFERIORES DE CONTROL */
+.form-buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.btn-form-submit {
+    background-color: #003d29;
+    color: #ffffff;
+    border: none;
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-form-submit:hover {
+    background-color: #002619;
+}
+
+.btn-form-cancel {
+    background-color: #a34343;
+    color: #ffffff;
+    border: none;
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-form-cancel:hover {
+    background-color: #823232;
+}
+
+/* LADO DERECHO: IMAGEN COMPLETA */
+.form-producto-right {
+    flex: 1;
+    display: flex;
+    background-color: #000000; /* Fondo de seguridad */
+}
+
+.form-right-display-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Se estira de forma fluida adaptándose al formulario */
+}
+
+/* RESPONSIVE: Si se abre en pantallas muy pequeñas colapsa uno abajo del otro */
+@media (max-width: 768px) {
+    .form-producto-split-card {
+        flex-direction: column;
+    }
+    .form-producto-right {
+        display: none; /* Escondemos la ilustración en móviles para dar espacio al formulario */
+    }
+}

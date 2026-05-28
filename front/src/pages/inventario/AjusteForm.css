@@ -1,0 +1,193 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ajuste-inventario-container {
+    font-family: 'G-Sans', sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    width: 173vh;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO SUPERIOR OSCURO */
+.ajuste-inventario-header-main {
+    background-color: #3d4652;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* CONTENEDOR CENTRAL DE LA TARJETA */
+.ajuste-inventario-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* TARJETA SPLIT CARD DUAL */
+.ajuste-inventario-split-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 950px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+/* LADO IZQUIERDO: FORMULARIO */
+.ajuste-inventario-left {
+    flex: 1.1;
+    padding: 40px 45px;
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ajuste-inventario-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #888888;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.ajuste-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CAMPOS DE ENTRADA */
+.ajuste-group-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.ajuste-group-field label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111111;
+    text-align: center;
+}
+
+.ajuste-input-text {
+    width: 100%;
+    max-width: 320px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    border: 1px solid #999999;
+    border-radius: 12px;
+    outline: none;
+    text-align: center;
+    color: #333333;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.ajuste-input-text::placeholder {
+    color: #cccccc;
+}
+
+/* Campo numérico de cantidad */
+.input-quantity {
+    font-size: 1.05rem;
+    font-weight: 500;
+    width: 110px;
+    padding: 8px;
+}
+
+/* ICONO DE BALANZA CENTRAL */
+.ajuste-decor-icon-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.ajuste-scale-icon {
+    font-size: 3.2rem;
+    color: #b5b5b5;
+    opacity: 0.75;
+    user-select: none;
+}
+
+/* FILA DE BOTONES */
+.ajuste-buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.btn-ajuste-submit {
+    background-color: #003d29; /* Verde institucional */
+    color: #ffffff;
+    border: none;
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-ajuste-submit:hover {
+    background-color: #002619;
+}
+
+.btn-ajuste-cancel {
+    background-color: #a34343; /* Rojo para cancelación */
+    color: #ffffff;
+    border: none;
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-ajuste-cancel:hover {
+    background-color: #823232;
+}
+
+/* LADO DERECHO: CONEXIÓN CON TUS IMÁGENES LOCALES */
+.ajuste-inventario-right {
+    flex: 0.9;
+    display: flex;
+    background-color: #000000;
+}
+
+.ajuste-right-display-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9); /* Sutilmente diferenciado del de adición */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .ajuste-inventario-split-card {
+        flex-direction: column;
+    }
+    .ajuste-inventario-right {
+        display: none;
+    }
+}

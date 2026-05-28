@@ -1,0 +1,9 @@
+- MOSTRAR STATUS
+    git status
+- SUBIR CAMBIOS
+    git add .
+    git commit -m "Tu comentario"
+    git push
+- DESCARGAR CAMBIOS
+    git pull
+

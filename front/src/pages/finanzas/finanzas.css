@@ -1,0 +1,216 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.finanzas-container {
+    font-family: 'G-Sans', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 60vh;
+    width: 173vh;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO SUPERIOR OSCURO */
+.finanzas-header-main {
+    background-color: #3d4652;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ÁREA DE CONTENIDO ENVOLVENTE */
+.finanzas-content {
+    padding: 30px 20px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* TARJETA PANEL BLANCA PRINCIPAL */
+.finanzas-card-panel {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    min-height: 480px;
+}
+
+/* ACCIONES SUPERIORES (BOTÓN AGREGAR) */
+.finanzas-top-actions {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-finanzas-add {
+    background-color: #003e30;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'G-Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-finanzas-add:hover {
+    background-color: #002b21;
+}
+
+/* CONTENEDOR DE TABLA RESPONSIVA */
+.finanzas-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* TABLA CORPORATIVA MINIMALISTA */
+.finanzas-table-main {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Cabeceras de la Tabla */
+.finanzas-table-main th {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111111;
+    padding: 14px 12px;
+    border-bottom: 2px solid #dddddd;
+}
+
+/* Filas del Cuerpo */
+.finanzas-table-main td {
+    padding: 16px 12px;
+    font-size: 0.9rem;
+    color: #333333;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+}
+
+.finanzas-table-main tbody tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* BADGES DE TRANSACCIÓN (Ingreso / Egreso / Gasto) */
+.badge-transaccion {
+    padding: 4px 14px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Colores condicionales según tipo */
+.badge-transaccion.ingreso {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.badge-transaccion.egreso,
+.badge-transaccion.gasto {
+    background-color: #8B3232;;
+    color: #fff;
+}
+
+/* RESALTADO DEL TEXTO DE MONTO */
+.td-monto {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.95rem;
+}
+
+.td-monto.monto-ingreso {
+    color: #146c43;
+}
+
+.td-monto.monto-egreso,
+.td-monto.monto-gasto {
+    color: #b02a37;
+}
+
+/* OTRAS COLUMNAS */
+.td-descripcion {
+    color: #444444;
+    text-align: left;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.td-fecha {
+    color: #666666;
+    font-size: 0.85rem;
+}
+
+/* GRUPO DE BOTONES DE ACCIÓN HORIZONTALES */
+.action-buttons-group {
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-action-edit,
+.btn-action-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'G-Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: transform 0.1s;
+}
+
+.btn-action-edit { color: #c48c33; }
+.btn-action-delete { color: #b84a4a; }
+
+.btn-action-edit:hover,
+.btn-action-delete:hover {
+    transform: scale(1.08);
+}
+
+/* ESTADO SIN REGISTROS */
+.finanzas-empty-state {
+    padding: 40px !important;
+    color: #999999 !important;
+    text-align: center !important;
+}
+
+/* ICONO DE FONDO DECORATIVO (Abajo a la derecha) */
+.finanzas-decor-tag {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.decor-icon-box {
+    font-size: 4rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .finanzas-top-actions {
+        justify-content: center;
+    }
+}

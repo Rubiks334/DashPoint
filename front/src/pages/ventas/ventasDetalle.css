@@ -1,0 +1,140 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.detalle-venta-container {
+    font-family: 'G-Sans', sans-serif;
+    background-color: #f4f4f4;
+    height: 93vh;
+    width: 175vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO SUPERIOR AZUL/GRIS OSCURO */
+.detalle-venta-header {
+    background-color: #3d4652;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* CUERPO CENTRAL */
+.detalle-venta-content {
+    max-width: 900px;
+    margin: 25px auto;
+    width: 90%;
+}
+
+/* TARJETA BLANCA DE LA TABLA */
+.detalle-table-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    margin-bottom: 25px;
+}
+
+.detalle-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.detalle-table th {
+    color: #333;
+    font-weight: 600;
+    text-align: left;
+    padding: 16px 10px;
+    border-bottom: 2px solid #3d4652; /* Línea de cabecera idéntica al módulo principal */
+}
+
+.detalle-table td {
+    padding: 16px 10px;
+    border-bottom: 1px solid #eef0f2;
+    color: #444;
+}
+
+.detalle-table tr:last-child td {
+    border-bottom: none;
+}
+
+.detail-product-name {
+    font-weight: 500;
+    color: #222;
+}
+
+.detail-quantity {
+    font-weight: 500;
+}
+
+.detail-subtotal {
+    font-weight: 600;
+    color: #333;
+}
+
+/* PANEL INFERIOR ACCIONES */
+.detalle-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BOTÓN REGRESAR ESTILO CANVA */
+.btn-regresar-detalle {
+    background-color: #5b78a6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-regresar-detalle:hover {
+    background-color: #465d82;
+}
+
+/* GESTIÓN DE DISPLAY DEL TOTAL */
+.detalle-total-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #313a46;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-total-label {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    font-weight: 400;
+}
+
+.detalle-total-amount {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* CONTENEDOR DE CARGA */
+.detalle-loading-box {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #666;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,282 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.usuarios-container {
+    font-family: 'G-Sans', sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    width: 173vh;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO SUPERIOR OSCURO */
+.usuarios-header-main {
+    background-color: #3d4652;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ÁREA DE CONTENIDO ENVOLVENTE */
+.usuarios-content {
+    padding: 30px 20px;
+    max-width: 1400px;
+    height: 70vh;
+    margin: 0 auto;
+
+}
+
+/* TARJETA PANEL BLANCA PRINCIPAL */
+.usuarios-card-panel {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    height: 70vh;
+}
+
+/* BARRA DE HERRAMIENTAS SUPERIOR (ALINEACIÓN IZQ / DER) */
+.usuarios-top-bar {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* BOTÓN NUEVO USUARIO */
+.btn-usuarios-add {
+    background-color: #003e30;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-family: 'G-Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-usuarios-add:hover {
+    background-color: #002b21;
+}
+
+.btn-usuarios-add span {
+    font-size: 1.1rem;
+}
+
+/* CONTENEDOR DE BÚSQUEDA */
+.usuarios-search-box {
+    position: relative;
+    width: 280px;
+}
+
+.usuarios-search-box input {
+    font-family: 'G-Sans', sans-serif;
+    width: 100%;
+    padding: 10px 40px 10px 16px;
+    border: 1.5px solid #cccccc;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.usuarios-search-box input:focus {
+    border-color: #3d4652;
+}
+
+.search-icon-inside {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* CONTENEDOR DE TABLA RESPONSIVA */
+.usuarios-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* TABLA MINIMALISTA CORPORATIVA */
+.usuarios-table-main {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Cabeceras de la Tabla */
+.usuarios-table-main th {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111111;
+    padding: 14px 10px;
+    border-bottom: 2px solid #dddddd;
+}
+
+/* Filas del Cuerpo */
+.usuarios-table-main td {
+    padding: 14px 0px;
+    font-size: 0.9rem;
+    color: #333333;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+}
+
+.usuarios-table-main tbody tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* MANEJO DE AVATARES / FOTOS */
+.td-foto-avatar {
+    width: 60px;
+}
+
+.usuarios-avatar-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #dddddd;
+    display: block;
+    margin: 0 auto;
+}
+
+.usuarios-avatar-placeholder {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    border: 2px solid #dddddd;
+}
+
+/* TEXTOS INTERNOS */
+.td-nombre { font-weight: 600; color: #111111; }
+.td-correo { color: #555555; }
+.td-telefono { font-variant-numeric: tabular-nums; color: #444444; }
+.td-fecha { color: #777777; font-size: 0.85rem; }
+
+/* BADGES DINÁMICOS PARA ROLES (Administrador, Empleado, etc.) */
+.badge-rol {
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.badge-rol.administrador {
+    background-color: #e2f0d9;
+    color: #385723;
+}
+
+.badge-rol.empleado {
+    background-color: #fff2cc;
+    color: #7f6000;
+}
+
+/* BADGES DINÁMICOS PARA ESTADOS (Activo / Inactivo) */
+.badge-estado {
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.badge-estado.activo {
+    background-color: #003e30;
+    color: #fff;
+}
+
+.badge-estado.inactivo {
+    background-color: #8B3232;
+    color: #fff;
+}
+
+/* GRUPO DE ACCIONES HORIZONTALES */
+.action-buttons-group {
+    display: inline-flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-action-edit,
+.btn-action-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: transform 0.1s;
+}
+
+.btn-action-edit { color: #c48c33; }
+.btn-action-delete { color: #b84a4a; }
+
+.btn-action-edit:hover,
+.btn-action-delete:hover {
+    transform: scale(1.08);
+}
+
+/* ESTADO SIN RESULTADOS */
+.usuarios-empty-state {
+    padding: 40px !important;
+    color: #999999 !important;
+    font-size: 1rem !important;
+}
+
+/* ICONO DE FONDO DECORATIVO */
+.usuarios-decor-tag {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    opacity: 0.12;
+    pointer-events: none;
+    user-select: none;
+}
+
+.decor-icon-users {
+    font-size: 4rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .usuarios-top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .usuarios-search-box {
+        width: 100%;
+    }
+}

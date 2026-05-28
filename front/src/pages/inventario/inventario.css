@@ -1,0 +1,172 @@
+@font-face {
+  font-family: G-Sans;
+  src: url('../../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.inventario-container {
+    font-family: 'G-Sans', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 93vh;
+    width: 175vh;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO DE LA VISTA (Barra Oscura Superior) */
+.inventario-header-main {
+    background-color: #3d4652;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* CONTENEDOR CENTRAL DE LA TARJETA BLANCA */
+.inventario-content {
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 1100px;
+    width: 92%;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+/* BARRA DE ACCIONES (Contiene el buscador alineado a la derecha) */
+.inventario-actions-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* ENVOLTORIO REDONDEADO DEL INPUT DE BÚSQUEDA */
+.inventario-search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #b5b5b5;
+    border-radius: 20px;
+    padding: 4px 14px;
+    width: 220px;
+}
+
+.search-icon-inside {
+    font-size: 0.9rem;
+    color: #777;
+    margin-right: 6px;
+}
+
+.inventario-search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.inventario-search-input::placeholder {
+    color: #b5b5b5;
+}
+
+/* TABLA DE CONTROL DE STOCK */
+.inventario-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.inventario-table th {
+    color: #000000;
+    font-weight: 500;
+    text-align: left;
+    padding: 12px 10px;
+    border-bottom: 2px solid #999999; /* Divisor superior plano marcado */
+}
+
+.inventario-table td {
+    padding: 16px 10px;
+    border-bottom: 1px solid #eef0f2;
+    color: #333;
+    vertical-align: middle;
+}
+
+.inventario-table tr:last-child td {
+    border-bottom: none;
+}
+
+.inv-name-cell {
+    font-weight: 400;
+    color: #111;
+}
+
+.inv-stock-cell {
+    font-weight: 500;
+}
+
+/* CONTENEDOR DE BOTONES EN FILA */
+.inv-action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* BOTONES CÁPSULA VERDE OSCURO (Estilo Canva) */
+.btn-inv-action {
+    background-color: #003d29;
+    color: #ffffff;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 12px; /* Forma de píldora/cápsula plana */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-inv-action:hover {
+    background-color: #002619;
+    transform: translateY(-1px);
+}
+
+.btn-inv-action:active {
+    transform: translateY(0);
+}
+
+/* SECCIÓN FEEDBACK DE CARGA (LOADING) */
+.inventario-loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+}
+
+.inventario-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #eef0f2;
+    border-top-color: #003d29;
+    border-radius: 50%;
+    animation: inv-spin 0.8s linear infinite;
+    margin-bottom: 12px;
+}
+
+@keyframes inv-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ESTILO TABLA SIN REGISTROS */
+.empty-inventario-text {
+    text-align: center;
+    color: #999;
+    padding: 40px !important;
+    font-style: italic;
+}
